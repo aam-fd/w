@@ -1,0 +1,26 @@
+.box {
+  display: inline-block;
+}
+
+.card {
+  min-height: 200px;
+  min-width: 200px;
+  max-height: 300px;
+  max-width: 300px;
+  margin: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.mat-tab-label {
+  height: 36px;
+}
+
+.icon-home {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 24px;
+  display: inline-block;
+  background-image: url(../../../assets/icons/home.png);
+  background-color: black;
+}

@@ -1,19 +1,6 @@
-<mat-tab-group dynamicHeight>
-  <mat-tab label="Список гостей">
-    <mat-card class="example-card">
-      <img mat-card-image src="assets/img/decor/guest-list/1.png" alt="">
-    </mat-card>
-  </mat-tab>
-  <mat-tab label="Стулья">
-    <mat-card class="example-card">
-      <img mat-card-image src="assets/img/decor/chair/1.png" alt="">
-
-    </mat-card>
-  </mat-tab>
-  <mat-tab label="Кольца">
-    <mat-card class="example-card">
-      <img mat-card-image src="assets/img/decor/rings/1.png" alt="">
-
-    </mat-card>
-  </mat-tab>
-</mat-tab-group>
+<div >
+  <a *ngFor="let i of categories"
+      routerLink="{{i.link}}">
+    <button class="btn" mat-button>{{i.title}}</button>
+  </a>
+</div>

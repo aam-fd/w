@@ -4,19 +4,17 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
 import { DemoMaterialModule } from './material-module';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { MainComponent } from './pages/main/main.component';
-import { SmallBoxComponent } from './components/small-box/small-box.component';
-import { LargeBoxComponent } from './components/large-box/large-box.component';
+import { CategoryComponent } from './pages/category/category.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    SmallBoxComponent,
-    LargeBoxComponent
+    CategoryComponent,
   ],
   imports: [
     AppRoutingModule,

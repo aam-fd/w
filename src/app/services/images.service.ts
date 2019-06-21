@@ -23,8 +23,8 @@ export class ImagesService {
     return this._images;
   }
 
-  public getImages(): Observable<any[]> {
+  // public getImages(): Observable<any[]> {
     
-  }
+  // }
 
 }

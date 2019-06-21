@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable, Observer } from 'rxjs';
+import { cards$ } from 'src/app/mock/data';
 
 @Component({
   selector: 'app-main',
@@ -7,7 +9,49 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  public cards$: Observable<ICard[]> = cards$;
+
+  public categories = [
+    {
+      link: 'decor', 
+      title: 'Декор',
+    },
+    {
+      link: 'stuff', 
+      title: 'Stuff',
+    },
+    {
+      link: 'restaurant', 
+      title: 'Ресторан',
+    },
+    {
+      link: 'bride', 
+      title: 'Невеста',
+    },
+    {
+      link: 'groom', 
+      title: 'Жених',
+    },
+    {
+      link: 'rings', 
+      title: 'Кольца',
+    },
+    {
+      link: 'xDay', 
+      title: 'Х-день',
+    },
+    {
+      link: 'transport', 
+      title: 'Транспорт',
+    },
+    {
+      link: 'travel', 
+      title: 'HoneyMoon',
+    },
+  ];
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

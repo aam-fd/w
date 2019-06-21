@@ -1,24 +1,8 @@
-.small-box, .large-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.btn {
+  font-size: 14px;
+  margin: 8px;
+  padding: 0px;
   background-color: #fff;
-  margin: 16px;
-  padding: 16px;
-  border-radius: 8px;
-}
-
-.small-box {
-  height: 100px;
   width: 100px;
+  line-height: 100px;
 }
-
-.large-box {
-  height: 300px;
-  width: 300px;
-}
-
-.example-card {
-  max-width: 400px;
-}
-
